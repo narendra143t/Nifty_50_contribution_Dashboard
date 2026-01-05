@@ -1,0 +1,201 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NIFTY Relative Index Flow</title>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Inter", sans-serif;
+      background: #0b0b0b;
+      color: #ffffff;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 20px 0 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .state {
+      text-align: center;
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #aaa;
+    }
+
+    /* =====================
+       SUMMARY CARDS
+    ===================== */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin: 20px;
+    }
+
+    .card {
+      background: #111;
+      border-radius: 14px;
+      padding: 18px;
+      text-align: center;
+      box-shadow: 0 0 25px rgba(0,0,0,0.6);
+    }
+
+    .card h3 {
+      font-size: 13px;
+      color: #aaa;
+      margin-bottom: 8px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .card span {
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    .green { color: #00ff99; }
+    .red { color: #ff4d4d; }
+
+    /* =====================
+       CHART CONTAINERS
+    ===================== */
+    .charts {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+      padding: 20px;
+    }
+
+    canvas {
+      background: #111;
+      border-radius: 14px;
+      padding: 12px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.6);
+    }
+
+    /* =====================
+       TABLES
+    ===================== */
+    .tables {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #111;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 0 25px rgba(0,0,0,0.6);
+    }
+
+    th {
+      background: #151515;
+      font-size: 13px;
+      padding: 10px;
+      text-transform: uppercase;
+      color: #aaa;
+      letter-spacing: 1px;
+    }
+
+    td {
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+      border-bottom: 1px solid #222;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* =====================
+       RESPONSIVE
+    ===================== */
+    @media (max-width: 900px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+      .tables {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>NIFTY Relative Index Flow</h1>
+  <div class="state">
+    Market State: <b id="marketState">Neutral</b>
+  </div>
+
+  <!-- SUMMARY CARDS -->
+  <div class="cards">
+    <div class="card green">
+      <h3>Positive Force</h3>
+      <span id="posForce">0</span>
+    </div>
+
+    <div class="card">
+      <h3>Net Index Flow</h3>
+      <span id="netForce">0</span>
+    </div>
+
+    <div class="card red">
+      <h3>Negative Force</h3>
+      <span id="negForce">0</span>
+    </div>
+  </div>
+
+  <!-- CHARTS -->
+  <div class="charts">
+    <canvas id="chart" height="120"></canvas>
+    <canvas id="flowChart" height="140"></canvas>
+
+
+  </div>
+
+  <!-- TABLES -->
+  <div class="tables">
+    <table>
+      <thead>
+        <tr><th colspan="5" class="green">Positive Constituents</th></tr>
+      </thead>
+      <tbody id="pullers"></tbody>
+    </table>
+
+    <table>
+      <thead>
+        <tr><th colspan="5" class="red">Negative Constituents</th></tr>
+      </thead>
+      <tbody id="draggers"></tbody>
+    </table>
+  </div>
+
+
+
+
+
+  <!-- APP SCRIPT -->
+  <script src="/static/app.js"></script>
+
+</body>
+</html>
+
+

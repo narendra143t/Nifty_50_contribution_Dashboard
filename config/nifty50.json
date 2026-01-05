@@ -1,0 +1,68 @@
+{
+  "HDFCBANK": {"token": "1333", "weight": 0.129},
+  "RELIANCE": {"token": "2885", "weight": 0.0851},
+  "ICICIBANK": {"token": "4963", "weight": 0.085},
+  "INFY": {"token": "1594", "weight": 0.0568},
+  "BHARTIARTL": {"token": "10604", "weight": 0.0445},
+  "LT": {"token": "11483", "weight": 0.0414},
+  "M%26M": {"token": "2031", "weight": 0.0256},
+  "AXISBANK": {"token": "5900", "weight": 0.0277},
+  "ITC": {"token": "1660", "weight": 0.0463},
+  "SBIN": {"token": "3045", "weight": 0.0256},
+
+  "MARUTI": {"token": "10999", "weight": 0.0145},
+  "GRASIM": {"token": "1232", "weight": 0.009},
+  "TECHM": {"token": "13538", "weight": 0.0088},
+  "COALINDIA": {"token": "20374", "weight": 0.0073},
+  "ADANIPORTS": {"token": "15083", "weight": 0.0097},
+  "ASIANPAINT": {"token": "236", "weight": 0.0094},
+  "POWERGRID": {"token": "14977", "weight": 0.0115},
+
+  "BAJFINANCE": {"token": "317", "weight": 0.0218},
+  "TATASTEEL": {"token": "3499", "weight": 0.0111},
+  "SUNPHARMA": {"token": "3351", "weight": 0.0169},
+  "HDFCLIFE": {"token": "467", "weight": 0.0069},
+  "DRREDDY": {"token": "881", "weight": 0.0069},
+ 
+ 
+  "EICHERMOT": {"token": "910", "weight": 0.0066},
+
+  "WIPRO": {"token": "3787", "weight": 0.0069},
+  "INDUSINDBK": {"token": "5258", "weight": 0.0054},
+  "JSWSTEEL": {"token": "11723", "weight": 0.0116},
+  "NTPC": {"token": "11630", "weight": 0.0135},
+
+  "TCS": {"token": "11536", "weight": 0.0336},
+  "ULTRACEMCO": {"token": "11532", "weight": 0.0124},
+
+  "HEROMOTOCO": {"token": "1348", "weight": 0.0047},
+  "BAJAJ-AUTO": {"token": "16669", "weight": 0.0093},
+  "BAJAJFINSV": {"token": "16675", "weight": 0.0107},
+  "SBILIFE": {"token": "21808", "weight": 0.0068},
+
+  "NESTLEIND": {"token": "17963", "weight": 0.0072},
+  "KOTAKBANK": {"token": "1922", "weight": 0.0274},
+  "HINDALCO": {"token": "1363", "weight": 0.0083},
+  "HINDUNILVR": {"token": "1394", "weight": 0.018},
+  "APOLLOHOSP": {"token": "157", "weight": 0.0064},
+  "ONGC": {"token": "2475", "weight": 0.0115},
+
+  "HCLTECH": {"token": "7229", "weight": 0.0171},
+  "ADANIENT": {"token": "25", "weight": 0.0081},
+  "CIPLA": {"token": "694", "weight": 0.0067},
+
+  "TATACONSUM": {"token": "3432", "weight": 0.0059},
+  "TITAN": {"token": "3506", "weight": 0.0123},
+
+
+  
+  "BEL": { "token": "383", "weight": 0 },
+  "ETERNAL": { "token": "5097", "weight": 0 },
+  "IOC": { "token": "1624", "weight": 0 },
+  "JIOFIN": { "token": "18143", "weight": 0 },
+  "SHRIRAMFIN": { "token": "4306", "weight": 0 },
+ "TATAMOTORS": { "token": 3456, "weight": 0 },
+  "TRENT": { "token": "1964", "weight": 0 }
+
+
+}
